@@ -1,20 +1,29 @@
 {% load static %}
-<!DOCTYPE html>
+<!DOCTYPE html5>
 
 <html>
     <head>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style>
+            h1{
+                color:blue;
+            }
+            p{
+                color: pink;
+             }
+        </style>
         <title>Django Girls!!</title>
     </head>
     <body>
 
     <h1> A VIDA É COMO UM JARDIM; TEM QUE FLORES(CER) PARA TER PERFUME!</h1>
+
             <p> O GIRASSOL É A FLOR DO SOL, A FLOR DA VIDA É DEUS QUE HABITA EM MIM E ME FAZ FLORIR.</p>
              {% for c in variavel %}
                {{c.name}}
                {{c.date_of_birth}}
                {% endfor %}
     <a href="https://www.youtube.com/">youtube</a>
-
     </body>
 </html>
