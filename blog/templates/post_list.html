@@ -1,14 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+
 <html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <title>Django Girls!!</title>
+    </head>
     <body>
-        <p>A VIDA É COMO UM JARDIM; TEM QUE FLORES(CER) PARA TER PERFUME!</p>
-        <p> O GIRASSOL É A FLOR DO SOL, A FLOR DA VIDA É DEUS QUE HABITA EM MIM E ME FAZ FLORIR.</p>
-        <p>
-            {% for c in variavel %}
-           {{c.name}}
-            {{c.date_of_birth}}
-            {% endfor %}
-        </p>
+
+    <h1> A VIDA É COMO UM JARDIM; TEM QUE FLORES(CER) PARA TER PERFUME!</h1>
+            <p> O GIRASSOL É A FLOR DO SOL, A FLOR DA VIDA É DEUS QUE HABITA EM MIM E ME FAZ FLORIR.</p>
+             {% for c in variavel %}
+               {{c.name}}
+               {{c.date_of_birth}}
+               {% endfor %}
+    <a href="https://www.youtube.com/">youtube</a>
 
     </body>
-
 </html>
